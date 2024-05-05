@@ -36,7 +36,7 @@ usermod -aG libvirt youruser
 
 ### Download cloud image
 
-Get latest debian stable cloud image.
+Get latest debian stable cloud image for x86.
 ```
 wget https://cloud.debian.org/images/cloud/bookworm/daily/latest/debian-12-genericcloud-amd64-daily.qcow2
 ```
