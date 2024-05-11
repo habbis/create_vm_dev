@@ -1,1 +1,8 @@
 *.local.net/*.iso
+*.local.net/meta-data
+*.local.net/user-data
+*.local.net/network-config
+k0s_cluster/*.iso
+k0s_cluster/meta-data
+k0s_cluster/user-data
+k0s_cluster/network-config
