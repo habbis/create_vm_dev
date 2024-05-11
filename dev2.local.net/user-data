@@ -1,6 +1,6 @@
 #cloud-config
-hostname: dev1.local.net
-fqdn: dev1.local.net
+hostname: dev2.local.net
+fqdn: dev2.local.net
 package_upgrade: true
 users:
   - default
@@ -57,7 +57,7 @@ write_files:
       Port 22
       AddressFamily inet
       #ListenAddress 0.0.0.0
-      ListenAddress 192.168.124.2
+      ListenAddress 192.168.124.3
       HostKey /etc/ssh/ssh_host_rsa_key
       HostKey /etc/ssh/ssh_host_ecdsa_key
       HostKey /etc/ssh/ssh_host_ed25519_key
@@ -165,7 +165,7 @@ write_files:
     owner: 'root:root'
     permissions: '0755'
 runcmd:
-  - [sh, -c, "echo 192.168.124.2 dev1.local.net >> /etc/hosts"]
+  - [sh, -c, "echo 192.168.124.3 dev2.local.net >> /etc/hosts"]
   - [systemctl, restart, chrony.service]
   - [systemctl, restart, sshd.service]
   - [update-ca-certificates]

@@ -1,12 +1,12 @@
 #!/bin/bash
 
-hostname="dev1"
+hostname="dev2"
 domain="local.net"
 template="deb12-cloud-image.qcow2"
 os="debian12"
 network="virbr0"
 storage="/var/lib/libvirt/images"
-ip="192.168.124.2"
+ip="192.168.124.3"
 netmask="255.255.255.0"
 gateway="192.168.124.1"
 nameserver1="1.1.1.1"
