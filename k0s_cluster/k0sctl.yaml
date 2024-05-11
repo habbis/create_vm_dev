@@ -1,0 +1,20 @@
+apiVersion: k0sctl.k0sproject.io/v1beta1
+kind: Cluster
+metadata:
+  name: k0s-cluster
+spec:
+  k0s:
+    version: 1.30.0+k0s.0
+  hosts:
+  - ssh:
+      address: 192.168.124.4
+      user: ansible
+      port: 22
+      #keyPath: null
+    role: controller
+  - ssh:
+      address: 192.168.124.5
+      user: ansible
+      port: 22
+      #keyPath: null
+    role: worker
