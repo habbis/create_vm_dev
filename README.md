@@ -4,7 +4,7 @@
 Create vm using kvm and cloud-init on linux.
 
 
-#### Install kvm.
+### Install kvm.
 
 debian/ubuntu
 
