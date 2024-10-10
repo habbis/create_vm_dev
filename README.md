@@ -4,7 +4,7 @@
 Create vm using kvm and cloud-init on linux.
 
 
-### Install kvm.
+#### Install kvm.
 
 debian/ubuntu
 
@@ -34,7 +34,7 @@ Add your user to libvirt group.
 usermod -aG libvirt youruser
 ```
 
-### Download cloud image
+#### Download cloud image
 
 Get latest debian stable cloud image for x86.
 ```
